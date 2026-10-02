@@ -1,86 +1,78 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Nexa is an independent digital studio that turns product ideas into clear, beautifully designed websites and web apps." />
-  <title>Nexa — Build Digital. Think Different.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nexa is an independent digital studio turning early ideas into clear, beautifully designed websites and useful web products.">
+  <meta name="theme-color" content="#090e1b">
+  <title>Nexa — Build digital. Think different.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
   <div class="progress" id="progress"></div>
   <header class="site-header" id="siteHeader">
     <div class="wrap nav-wrap">
-      <a class="brand" href="#home" aria-label="Nexa home">NEXA<span>.</span></a>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+      <a class="brand" href="index.html" aria-label="Nexa home">NEXA<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
       <nav class="nav" id="nav" aria-label="Primary navigation">
-        <a class="nav-link active" href="#home">Home</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#services">Services</a>
-        <a class="nav-link" href="#work">Work</a>
-        <a class="nav-link" href="#contact">Contact</a>
-        <a class="nav-cta" href="#contact">Start a project <span>↗</span></a>
+        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="work.html">Work</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-cta" href="contact.html">Start a project <span>↗</span></a>
       </nav>
     </div>
   </header>
 
-  <main id="home">
-    <section class="hero dark-section section-space">
+  <main>
+    <section class="hero dark-section section-space" id="home">
       <div class="hero-grid glow-grid"></div>
       <div class="wrap hero-inner">
         <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="live-dot"></span> Available for selected projects · 2026</div>
-          <h1>Build digital.<br><span>Think different.</span></h1>
-          <p class="hero-text">Nexa is an independent digital studio that turns early ideas into clear, beautifully designed websites and useful web products—from the first sketch to launch.</p>
+          <div class="eyebrow"><span class="live-dot"></span> Independent digital studio · Working worldwide</div>
+          <h1>Make the next<br><span>thing matter.</span></h1>
+          <p class="hero-text">Nexa turns ambitious early ideas into clear digital experiences. Thoughtful strategy, expressive design, and carefully built websites and web products—all in one focused studio.</p>
           <div class="button-row">
-            <a class="btn btn-primary" href="#work">View selected work <span>↗</span></a>
-            <a class="btn btn-ghost" href="#contact">Start a conversation</a>
+            <a class="btn btn-primary" href="work.html">Explore the work <span>↗</span></a>
+            <a class="btn btn-ghost" href="contact.html">Tell us your idea <span>↗</span></a>
           </div>
           <div class="hero-meta">
-            <div><strong>08+</strong><span>Projects shipped</span></div>
-            <div><strong>06</strong><span>Core capabilities</span></div>
-            <div><strong>01</strong><span>Clear design system</span></div>
+            <div><strong>01</strong><span>Small, focused studio</span></div>
+            <div><strong>03</strong><span>Ways to work together</span></div>
+            <div><strong>∞</strong><span>Room to think bigger</span></div>
           </div>
         </div>
-
-        <div class="hero-art reveal" aria-label="Abstract technology visual">
-          <div class="orbit orbit-a"></div>
-          <div class="orbit orbit-b"></div>
+        <div class="hero-art reveal" aria-label="An animated visualization of a digital product taking shape">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
           <div class="core-card">
-            <div class="core-top"><span>BUILD STATUS</span><span class="status">● Live</span></div>
-            <div class="core-code"><span>01</span><span>design.system()</span></div>
-            <div class="core-code"><span>02</span><span>ship.with.intent()</span></div>
-            <div class="core-code"><span>03</span><span>measure.outcome()</span></div>
-            <div class="core-footer"><span>PRECISION / CREATIVE</span><span>NX-06</span></div>
+            <div class="core-top"><span>IDEA → EXPERIENCE</span><span class="status">● In motion</span></div>
+            <div class="core-code"><span>01</span><span>listen.with.intent()</span></div>
+            <div class="core-code"><span>02</span><span>design.for.people()</span></div>
+            <div class="core-code"><span>03</span><span>build.to.last()</span></div>
+            <div class="core-footer"><span>STRATEGY / DESIGN / CODE</span><span>NX—01</span></div>
           </div>
-          <div class="floating-card card-one">FULL STACK <b>/ 06</b></div>
-          <div class="floating-card card-two">UI / UX <b>+ SYSTEMS</b></div>
-          <div class="hero-cross cross-one"></div>
-          <div class="hero-cross cross-two"></div>
+          <div class="floating-card card-one">GOOD IDEAS <b>GROW HERE</b></div>
+          <div class="floating-card card-two">LESS NOISE <b>MORE MEANING</b></div>
+          <div class="hero-cross cross-one"></div><div class="hero-cross cross-two"></div>
         </div>
       </div>
-      <a class="scroll-hint" href="#about"><span>Scroll to explore</span><b>↓</b></a>
+      <a class="scroll-hint" href="#intro"><span>A studio for what’s next</span><b>↓</b></a>
     </section>
 
-    <section class="light-section section-space" id="about">
-      <div class="wrap two-col">
+    <section class="light-section section-space" id="intro">
+      <div class="wrap home-intro">
         <div class="reveal">
-          <div class="eyebrow dark-eyebrow">01 / About</div>
-          <h2>Technical precision.<br><em>Human clarity.</em></h2>
+          <div class="eyebrow dark-eyebrow">A different kind of digital partner</div>
+          <h2>From a rough sketch<br>to a <em>real thing.</em></h2>
         </div>
         <div class="about-copy reveal">
-          <p class="lead">Nexa helps founders and small teams turn a product idea into a real digital experience.</p>
-          <p>It is a design and development studio, not a standalone software product. Nexa plans the experience, designs the interface, builds the website or web app, and helps get a focused first version ready to launch.</p>
-          <div class="capability-list">
-            <div><span>01</span><strong>Strategy</strong><small>Clarify the problem and outcome.</small></div>
-            <div><span>02</span><strong>Design</strong><small>Create hierarchy, rhythm and interaction.</small></div>
-            <div><span>03</span><strong>Build</strong><small>Turn the system into fast, maintainable code.</small></div>
-          </div>
+          <p class="lead">The best digital work feels simple on the surface because someone cared about every detail underneath.</p>
+          <p>Nexa is an independent design and development studio for founders and small teams. Work directly with one thoughtful partner—from the first useful question to the moment your product meets the world.</p>
+          <a class="text-link" href="about.html">Meet the studio <span>↗</span></a>
         </div>
       </div>
     </section>
@@ -88,14 +80,13 @@
     <section class="services-section section-space" id="services">
       <div class="wrap">
         <div class="section-head reveal">
-          <div><div class="eyebrow">02 / Services</div><h2>Small set.<br><em>Strong execution.</em></h2></div>
-          <p>Simple offers with clear outputs — no bloated packages, no decorative complexity.</p>
+          <div><div class="eyebrow dark-eyebrow">How we can help</div><h2>Small set.<br><em>Strong execution.</em></h2></div>
+          <div class="section-aside"><p>Start with the challenge in front of you. We’ll shape the right-sized engagement around it.</p><a class="text-link" href="services.html">See all services <span>↗</span></a></div>
         </div>
         <div class="service-grid">
-          <article class="service-card reveal"><span class="service-no">01</span><div class="service-icon">↗</div><h3>Web Design</h3><p>Responsive marketing sites and focused product pages with a strong visual system.</p><a href="#contact">Explore <span>↗</span></a></article>
-          <article class="service-card reveal featured"><span class="service-no">02</span><div class="service-icon">◫</div><h3>Frontend Build</h3><p>Clean HTML, CSS and JavaScript experiences that are fast, accessible and easy to maintain.</p><a href="#contact">Explore <span>↗</span></a></article>
-          <article class="service-card reveal"><span class="service-no">03</span><div class="service-icon">⌁</div><h3>Full-Stack MVP</h3><p>Practical Node.js products that connect a polished interface to real application logic.</p><a href="#contact">Explore <span>↗</span></a></article>
-          <article class="service-card reveal"><span class="service-no">04</span><div class="service-icon">◉</div><h3>UI Systems</h3><p>Reusable components, tokens and layout rules that keep a product coherent as it grows.</p><a href="#contact">Explore <span>↗</span></a></article>
+          <article class="service-card reveal"><span class="service-no">01 / THINK</span><div class="service-icon">↗</div><h3>Digital direction</h3><p>Find the sharpest story, audience, and first step before the pixels pile up.</p><a href="services.html#direction">Explore the service <span>↗</span></a></article>
+          <article class="service-card featured reveal"><span class="service-no">02 / SHAPE</span><div class="service-icon">◫</div><h3>Websites &amp; products</h3><p>Distinctive, accessible experiences that make a good idea easy to understand.</p><a href="services.html#websites">Explore the service <span>↗</span></a></article>
+          <article class="service-card reveal"><span class="service-no">03 / BUILD</span><div class="service-icon">⌁</div><h3>Product foundations</h3><p>Useful prototypes, frontends, and design systems made to grow with the work.</p><a href="services.html#foundations">Explore the service <span>↗</span></a></article>
         </div>
       </div>
     </section>
@@ -103,73 +94,47 @@
     <section class="dark-section section-space work-section" id="work">
       <div class="wrap">
         <div class="section-head dark-head reveal">
-          <div><div class="eyebrow">03 / Selected work</div><h2>Useful products.<br><em>Designed to move.</em></h2></div>
-          <div class="filters" role="tablist" aria-label="Project filters">
-            <button class="filter active" data-filter="all">All</button>
-            <button class="filter" data-filter="web">Web</button>
-            <button class="filter" data-filter="app">App</button>
-            <button class="filter" data-filter="system">System</button>
-          </div>
+          <div><div class="eyebrow">An idea of what’s possible</div><h2>Good thinking.<br><em>Made tangible.</em></h2></div>
+          <div class="section-aside"><p>Exploratory concepts show how thoughtful design can make everyday products feel more human.</p><a class="text-link" href="work.html">Explore the concepts <span>↗</span></a></div>
         </div>
-        <div class="project-grid" id="projectGrid">
-          <article class="project-card reveal" data-type="web">
-            <div class="project-visual visual-indigo"><span>NEXA / 01</span><div class="mini-browser"><div></div><div></div><div></div></div></div>
-            <div class="project-info"><div><span class="project-tag">WEB · 2026</span><h3>Orbit Finance</h3><p>A calmer interface for tracking personal cash flow.</p></div><span class="arrow">↗</span></div>
-          </article>
-          <article class="project-card reveal" data-type="app">
-            <div class="project-visual visual-cyan"><span>NEXA / 02</span><div class="mini-panel"><b>FOCUS</b><i>3 priorities</i><i>2 hours</i><i>1 clear goal</i></div></div>
-            <div class="project-info"><div><span class="project-tag">APP · 2026</span><h3>Focus Loop</h3><p>A tiny daily planning tool built around three priorities.</p></div><span class="arrow">↗</span></div>
-          </article>
-          <article class="project-card reveal" data-type="system">
-            <div class="project-visual visual-coral"><span>NEXA / 03</span><div class="system-lines"><i></i><i></i><i></i><i></i></div></div>
-            <div class="project-info"><div><span class="project-tag">SYSTEM · 2025</span><h3>Pulse UI Kit</h3><p>A small token-driven system for consistent interface work.</p></div><span class="arrow">↗</span></div>
-          </article>
-          <article class="project-card reveal" data-type="web">
-            <div class="project-visual visual-mix"><span>NEXA / 04</span><div class="type-stack"><b>BUILD</b><b>BETTER</b><b>DAILY</b></div></div>
-            <div class="project-info"><div><span class="project-tag">WEB · 2025</span><h3>Northline Studio</h3><p>A bold portfolio direction for a small engineering team.</p></div><span class="arrow">↗</span></div>
-          </article>
+        <div class="project-grid home-project-grid">
+          <a class="project-card reveal" href="work.html#orbit">
+            <div class="project-visual visual-indigo"><span>CONCEPT / 01</span><div class="mini-browser"><div></div><div></div><div></div></div></div>
+            <div class="project-info"><div><span class="project-tag">FINANCIAL WELLNESS · WEB</span><h3>Orbit Finance</h3><p>A calmer perspective on the money coming in and going out.</p></div><span class="arrow">↗</span></div>
+          </a>
+          <a class="project-card reveal" href="work.html#focus-loop">
+            <div class="project-visual visual-cyan"><span>CONCEPT / 02</span><div class="mini-panel"><b>FOCUS</b><i>Three priorities</i><i>One clear goal</i><i>Room to breathe</i></div></div>
+            <div class="project-info"><div><span class="project-tag">PERSONAL PRODUCTIVITY · APP</span><h3>Focus Loop</h3><p>A small daily planning ritual, designed to leave space for real life.</p></div><span class="arrow">↗</span></div>
+          </a>
         </div>
       </div>
     </section>
 
     <section class="process-section section-space">
-      <div class="wrap">
-        <div class="section-head reveal"><div><div class="eyebrow dark-eyebrow">04 / Process</div><h2>A workflow built for<br><em>clarity.</em></h2></div><p>Every project follows the same sequence: understand, simplify, build, refine, launch.</p></div>
+      <div class="wrap home-process">
+        <div class="reveal"><div class="eyebrow dark-eyebrow">A considered process</div><h2>Clear at every<br><em>step.</em></h2><p>Good collaboration shouldn’t feel mysterious. You’ll know what we’re solving, what happens next, and where your input matters.</p><a class="text-link" href="about.html#approach">How the studio works <span>↗</span></a></div>
         <div class="process-list">
-          <div class="process-item reveal"><span>01</span><div><h3>Discover</h3><p>Define the audience, problem and success metric.</p></div><b>↗</b></div>
-          <div class="process-item reveal"><span>02</span><div><h3>Structure</h3><p>Turn the idea into pages, flows, components and content.</p></div><b>↗</b></div>
-          <div class="process-item reveal"><span>03</span><div><h3>Design</h3><p>Build hierarchy, visual language and interaction states.</p></div><b>↗</b></div>
-          <div class="process-item reveal"><span>04</span><div><h3>Build</h3><p>Implement the experience with responsive, readable code.</p></div><b>↗</b></div>
-          <div class="process-item reveal"><span>05</span><div><h3>Launch</h3><p>Test, polish and ship a version that people can use.</p></div><b>↗</b></div>
+          <div class="process-item reveal"><span>01</span><div><h3>Listen</h3><p>Get close to the real people and problem.</p></div><b>↗</b></div>
+          <div class="process-item reveal"><span>02</span><div><h3>Make sense</h3><p>Shape a clear direction and a manageable plan.</p></div><b>↗</b></div>
+          <div class="process-item reveal"><span>03</span><div><h3>Make it real</h3><p>Design, build, refine, and put it to work.</p></div><b>↗</b></div>
         </div>
       </div>
     </section>
 
-    <section class="cta-section dark-section section-space" id="contact">
-      <div class="wrap cta-grid">
-        <div class="reveal"><div class="eyebrow">05 / Contact</div><h2>Have an idea<br>worth building?</h2><p>Tell me what you are trying to solve. We can turn the rough idea into a clear first version.</p></div>
-        <form class="contact-form reveal" id="contactForm">
-          <label>Name<input name="name" type="text" placeholder="Your name" required></label>
-          <label>Email<input name="email" type="email" placeholder="you@example.com" required></label>
-          <label>Project type<select name="project"><option>Website</option><option>Web app</option><option>UI system</option><option>Full-stack MVP</option></select></label>
-          <label>Message<textarea name="message" placeholder="What are you trying to build?" required></textarea></label>
-          <button class="btn btn-primary full" type="submit">Start the conversation <span>↗</span></button>
-          <p class="form-note" id="formNote" role="status"></p>
-        </form>
-      </div>
+    <section class="home-cta dark-section section-space">
+      <div class="wrap home-cta-inner reveal"><div class="eyebrow">Your idea, from here</div><h2>Let’s make something<br><em>worth using.</em></h2><p>Bring the messy first draft. We’ll figure out the clearest next move together.</p><a class="btn btn-primary" href="contact.html">Start a conversation <span>↗</span></a></div>
     </section>
   </main>
 
   <footer class="footer dark-section">
     <div class="wrap footer-grid">
-      <div><a class="brand" href="#home">NEXA<span>.</span></a><p>Technical precision + creative thinking.</p></div>
-      <div><span class="footer-label">Navigate</span><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></div>
-      <div><span class="footer-label">Elsewhere</span><a href="#">GitHub ↗</a><a href="#">LinkedIn ↗</a><a href="#">Dribbble ↗</a></div>
-      <div><span class="footer-label">Availability</span><strong>Selected projects only</strong><small>Based remotely · UTC+5:30</small></div>
+      <div><a class="brand" href="index.html">NEXA<span>.</span></a><p>Small studio. Thoughtful work. A clearer digital world.</p></div>
+      <div><span class="footer-label">Explore</span><a href="about.html">About Nexa</a><a href="services.html">Services</a><a href="work.html">Selected concepts</a><a href="contact.html">Get in touch</a></div>
+      <div><span class="footer-label">The approach</span><a href="about.html#approach">How we work</a><a href="services.html#direction">Digital direction</a><a href="services.html#websites">Websites &amp; products</a><a href="services.html#foundations">Product foundations</a></div>
+      <div><span class="footer-label">Availability</span><strong>Taking on select projects</strong><small>Working worldwide · UTC+5:30</small></div>
     </div>
-    <div class="wrap footer-bottom"><span>© <span id="year"></span> Nexa Studio</span><span>Built with HTML, CSS & JavaScript</span></div>
+    <div class="wrap footer-bottom"><span>© <span id="year"></span> Nexa Studio</span><span>Independent by design · Built with care</span></div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
