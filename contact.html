@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Start a conversation about your website, web app, or product idea. Share the challenge and prepare a project brief with Nexa.">
+  <meta name="theme-color" content="#090e1b">
+  <title>Start a project — Talk to Nexa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="site-header" id="siteHeader"><div class="wrap nav-wrap">
+    <a class="brand" href="index.html" aria-label="Nexa home">NEXA<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Primary navigation">
+      <a class="nav-link" href="index.html">Home</a><a class="nav-link" href="about.html">About</a><a class="nav-link" href="services.html">Services</a><a class="nav-link" href="work.html">Work</a><a class="nav-link active" href="contact.html" aria-current="page">Contact</a><a class="nav-cta" href="contact.html">Start a project <span>↗</span></a>
+    </nav>
+  </div></header>
+  <main>
+    <section class="page-hero dark-section contact-page-hero">
+      <div class="glow-grid"></div>
+      <div class="wrap page-hero-inner">
+        <div class="eyebrow reveal">The beginning of something good</div>
+        <h1 class="reveal">Big idea.<br><em>Small first step.</em></h1>
+        <p class="page-hero-lead reveal">Tell us what you’re trying to make happen. You don’t need a perfect brief; a clear starting point is more than enough.</p>
+        <div class="page-hero-foot reveal"><span>NO PITCH DECK REQUIRED</span><span>JUST A REAL CONVERSATION</span></div>
+      </div>
+      <div class="about-mark contact-mark" aria-hidden="true"><span>↗</span><i></i><b>NX—HELLO</b></div>
+    </section>
+    <section class="contact-page-section section-space">
+      <div class="wrap contact-layout">
+        <aside class="contact-aside reveal">
+          <div class="eyebrow dark-eyebrow">A good first note</div>
+          <h2>Start where<br>you <em>are.</em></h2>
+          <p>Share the problem, the rough idea, or what you’re still figuring out. We’ll read through it and help you identify a useful next step.</p>
+          <div class="contact-prompt"><span>01</span><div><strong>What are you working on?</strong><p>A site, a product, a new direction—or a question.</p></div></div>
+          <div class="contact-prompt"><span>02</span><div><strong>What would make it better?</strong><p>Tell us what feels hard, unclear, or full of potential.</p></div></div>
+          <div class="contact-prompt"><span>03</span><div><strong>What comes next?</strong><p>We’ll help work out the right-sized next move together.</p></div></div>
+          <p class="contact-privacy">Your details stay in this browser unless you choose to share them. Submitting the form prepares a project brief for you to copy or download—it does not send your information to a server.</p>
+        </aside>
+        <div class="contact-form-panel reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-heading"><span class="service-no">A FEW USEFUL DETAILS</span><h2>Let’s get the shape of it.</h2></div>
+            <div class="form-field-grid">
+              <label>Your name<input name="name" type="text" placeholder="How should we address you?" autocomplete="name" required></label>
+              <label>Your email<input name="email" type="email" placeholder="you@example.com" autocomplete="email" required></label>
+            </div>
+            <label>What would you like help with?
+              <select name="project" required>
+                <option value="" disabled selected>Choose a starting point</option>
+                <option value="Digital direction">Digital direction</option>
+                <option value="Website or marketing site">Website or marketing site</option>
+                <option value="Web app or product">Web app or product</option>
+                <option value="Websites and products">Websites and products</option>
+                <option value="Product foundations">Product foundations</option>
+                <option value="Design system">Design system</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </label>
+            <label>What are you hoping to make happen?<textarea name="message" placeholder="What are you working on, who is it for, and what would you like to change?" minlength="12" required></textarea><small class="field-hint">A few sentences help us understand the challenge. No polished brief needed.</small></label>
+            <div class="form-field-grid">
+              <label>When are you hoping to get started?
+                <select name="timeline">
+                  <option value="Flexible">Flexible</option><option value="As soon as practical">As soon as practical</option><option value="Within the next month">Within the next month</option><option value="In one to three months">In one to three months</option><option value="Just exploring">Just exploring</option>
+                </select>
+              </label>
+              <label>Anything else to know? <span class="optional-label">OPTIONAL</span><input name="context" type="text" placeholder="A link, a constraint, a little more context"></label>
+            </div>
+            <button class="btn btn-primary full" type="submit">Prepare my project brief <span>↗</span></button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+          <section class="brief-preview" id="briefPreview" hidden aria-labelledby="briefHeading">
+            <div class="brief-preview-heading"><div><span class="eyebrow dark-eyebrow">Ready when you are</span><h2 id="briefHeading">Your project brief.</h2></div><span class="brief-check">✓</span></div>
+            <p class="brief-disclaimer">Prepared on this device only. Nothing has been sent.</p>
+            <pre id="briefContent"></pre>
+            <div class="brief-actions"><button class="btn btn-dark" id="copyBrief" type="button">Copy brief <span>⧉</span></button><button class="btn btn-outline-dark" id="downloadBrief" type="button">Download .txt <span>↓</span></button></div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section class="faq-section section-space">
+      <div class="wrap faq-layout">
+        <div class="reveal"><div class="eyebrow dark-eyebrow">A few helpful answers</div><h2>Questions,<br><em>answered.</em></h2><p>Still finding your feet? That’s a perfectly good place to start.</p></div>
+        <div class="faq-list reveal">
+          <details><summary>Do I need a detailed brief before reaching out?</summary><p>No. A rough idea, a clear problem, or an open question is enough to start a useful conversation. The brief builder above can help organize your thoughts, but you can keep it simple.</p></details>
+          <details><summary>Is Nexa a product or a design and development studio?</summary><p>Nexa is an independent design and development studio. The concept projects are exploratory portfolio pieces, not products for sale or live client projects.</p></details>
+          <details><summary>Does the form send my details?</summary><p>No. The form runs entirely in your browser. When you prepare a brief, you can review, copy, or download the text yourself; no email is sent and nothing is stored or submitted to a server.</p></details>
+          <details><summary>What happens after I get in touch?</summary><p>We can start by clarifying what you need, what success might look like, and whether the project is a good fit for the studio. Any next step would be agreed together.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer dark-section"><div class="wrap footer-grid">
+    <div><a class="brand" href="index.html">NEXA<span>.</span></a><p>Small studio. Thoughtful work. A clearer digital world.</p></div>
+    <div><span class="footer-label">Explore</span><a href="about.html">About Nexa</a><a href="services.html">Services</a><a href="work.html">Selected concepts</a><a href="contact.html">Get in touch</a></div>
+    <div><span class="footer-label">The approach</span><a href="about.html#approach">How we work</a><a href="services.html#direction">Digital direction</a><a href="services.html#websites">Websites &amp; products</a><a href="services.html#foundations">Product foundations</a></div>
+    <div><span class="footer-label">Availability</span><strong>Taking on select projects</strong><small>Working worldwide · UTC+5:30</small></div>
+  </div><div class="wrap footer-bottom"><span>© <span id="year"></span> Nexa Studio</span><span>Independent by design · Built with care</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
